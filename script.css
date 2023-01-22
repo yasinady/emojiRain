@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: rgba(2, 2, 61, 0.8);
+    min-height: 100vh;
+}
+
+button {
+    background: rgba(31, 31, 48, 0.8);
+    border: none;
+    color: #fff;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    font-size: 2.5rem;
+    animation: fall 3s linear ;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
